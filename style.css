@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    padding: 20px;
+}
+
+.wrapper {
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.text-input {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.text-input textarea {
+    height: 250px;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    background: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 0;
+}
+
+.from-text {
+    border-right: 1px solid #ccc;
+}
+
+.to-text {
+    background: #f5f5f5;
+}
+
+.controls, li, .icons, .icons ion-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controls {
+    list-style: none;
+    padding: 12px 15px;
+}
+
+.controls .row .icons {
+    width: 38%;
+}
+
+.controls .row .icons ion-icon {
+    width: 20px;
+    height: 20px;
+    color: #adadad;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.controls .row .icons ion-icon:hover {
+    color: #4285f4;
+}
+
+.controls .row select {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    cursor: pointer;
+}
+
+.controls .row select option {
+    background: #fff;
+}
+
+.controls .exchange {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.controls .exchange:hover {
+    transform: rotate(90deg);
+}
+
+.controls .exchange ion-icon {
+    width: 20px;
+    height: 20px;
+    color: #adadad;
+}
+
+.container button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #4285f4;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 0 0 8px 8px;
+    transition: background 0.3s;
+}
+
+.container button:hover {
+    background: #3367d6;
+}
+
+#clear-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #f44336;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 0 0 8px 8px;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+#clear-btn:hover {
+    background: #d32f2f;
+}
+
+@media (max-width: 660px) {
+    .text-input {
+        flex-direction: column;
+    }
+    .from-text {
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+    .controls .row .icons {
+        width: 25%;
+    }
+}
